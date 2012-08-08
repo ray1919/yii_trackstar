@@ -1,0 +1,35 @@
+2012/08/08 21:42:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "project".' in /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(142): CWebApplication->runController('project')
+#1 /home/zhao/installer/yii-1.1.11.58da45/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/zhao/public_html/yii/trackstar/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/~zhao/yii/trackstar/project
+---
+2012/08/08 22:01:27 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /home/zhao/installer/yii-1.1.11.58da45/framework/web/auth/CAccessControlFilter.php:170
+Stack trace:
+#0 /home/zhao/installer/yii-1.1.11.58da45/framework/web/auth/CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(292): CFilterChain->run()
+#6 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(283): CController->run('admin')
+#8 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(142): CWebApplication->runController('project/admin')
+#9 /home/zhao/installer/yii-1.1.11.58da45/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/zhao/public_html/yii/trackstar/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/~zhao/yii/trackstar/index.php/project/admin
+HTTP_REFERER=http://localhost/~zhao/yii/trackstar/index.php/project/create
+---
+2012/08/08 22:03:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "insert".' in /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php:484
+Stack trace:
+#0 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(271): CController->missingAction('insert')
+#1 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(283): CController->run('insert')
+#2 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(142): CWebApplication->runController('project/insert')
+#3 /home/zhao/installer/yii-1.1.11.58da45/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/zhao/public_html/yii/trackstar/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/~zhao/yii/trackstar/index.php/project/insert
+---
