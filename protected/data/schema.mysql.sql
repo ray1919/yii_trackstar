@@ -71,3 +71,6 @@ VALUES
 ('test1@notanaddress.com','Test_User_One', MD5('test1')),
 ('test2@notanaddress.com','Test_User_Two', MD5('test2'))
 ;
+INSERT INTO tbl_project_user_assignment (project_id, user_id)
+VALUES (1,1), (1,2);
+

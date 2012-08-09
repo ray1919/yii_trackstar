@@ -213,4 +213,13 @@ class IssueController extends Controller
 			Yii::app()->end();
 		}
 	}
+
+  /**
+    * * Returns the project model instance to which this issue belongs
+    * */
+  public function getProject()
+  {
+    return $this->_project;
+  }
+
 }
