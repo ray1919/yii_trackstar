@@ -49,7 +49,7 @@ class ProjectController extends Controller
 	 * Displays a particular model.
 	 * @param integer $id the ID of the model to be displayed
 	 */
-	public function actionView()
+	public function actionView($id)
 	{
 		//$this->render('view',array(
 		//	'model'=>$this->loadModel($id),
@@ -58,7 +58,7 @@ class ProjectController extends Controller
     $issueDataProvider=new CActiveDataProvider('Issue', array(
       'criteria'=>array(
         'condition'=>'project_id=:projectId',
-        'params'=>array(':projectId'=>$this->loadModel()->id),
+        'params'=>array(':projectId'=>$this->loadModel($id)->id),
       ),
       'pagination'=>array(
         'pageSize'=>1,
@@ -66,7 +66,7 @@ class ProjectController extends Controller
     ));
 
     $this->render('view',array(
-      'model'=>$this->loadModel(),
+      'model'=>$this->loadModel($id),
       'issueDataProvider'=>$issueDataProvider,
     ));
 	}
