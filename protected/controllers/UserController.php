@@ -1,50 +1,7 @@
 <?php
 
-class IssueController extends Controller
+class UserController extends Controller
 {
-  /**
-    * @var private property containing the associated Project model
-    instance.
-    */
-  private $_project = null;
-  /**
-    * Protected method to load the associated Project model class
-    * @project_id the primary identifier of the associated Project
-    * @return object the Project data model based on the primary key
-    */
-  protected function loadProject($project_id) {
-    //if the project property is null, create it based on input id
-    if($this->_project===null)
-    {
-      $this->_project=Project::model()->findbyPk($project_id);
-      if($this->_project===null)
-      {
-        throw new CHttpException(404,'The requested project does not
-              exist.');
-      }
-    }
-    return $this->_project;
-  }
-  /**
-    * In-class defined filter method, configured for use in the above
-    filters() method
-    * It is called before the actionCreate() action method is run in
-    order to ensure a proper project context
-    */
-  public function filterProjectContext($filterChain)
-  {
-    //set the project identifier based on either the GET or POST input
-    //request variables, since we allow both types for our actions
-    $projectId = null;
-    if(isset($_GET['pid']))
-      $projectId = $_GET['pid'];
-    else
-      if(isset($_POST['pid']))
-        $projectId = $_POST['pid'];
-    $this->loadProject($projectId);
-    //complete the running of other filters and execute the requested action
-    $filterChain->run();
-  }
 	/**
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
 	 * using two-column layout. See 'protected/views/layouts/column2.php'.
@@ -59,7 +16,6 @@ class IssueController extends Controller
 		return array(
 			'accessControl', // perform access control for CRUD operations
 			'postOnly + delete', // we only allow deletion via POST request
-      'projectContext + create index admin update', //check to ensure valid project context
 		);
 	}
 
@@ -106,15 +62,14 @@ class IssueController extends Controller
 	 */
 	public function actionCreate()
 	{
-		$model=new Issue;
-    $model->project_id = $this->_project->id;
+		$model=new User;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['Issue']))
+		if(isset($_POST['User']))
 		{
-			$model->attributes=$_POST['Issue'];
+			$model->attributes=$_POST['User'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
 		}
@@ -136,9 +91,9 @@ class IssueController extends Controller
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['Issue']))
+		if(isset($_POST['User']))
 		{
-			$model->attributes=$_POST['Issue'];
+			$model->attributes=$_POST['User'];
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id));
 		}
@@ -167,18 +122,9 @@ class IssueController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$model=new Issue;
-    $model->project_id = $this->_project->id;
-		// $dataProvider=new CActiveDataProvider('Issue');
-    $dataProvider=new CActiveDataProvider('Issue', array(
-            'criteria'=>array(
-              'condition'=>'project_id=:projectId',
-              'params'=>array(':projectId'=>$this->_project->id),
-              ),
-            ));
+		$dataProvider=new CActiveDataProvider('User');
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
-			'model'=>$model,
 		));
 	}
 
@@ -187,12 +133,10 @@ class IssueController extends Controller
 	 */
 	public function actionAdmin()
 	{
-		$model=new Issue('search');
+		$model=new User('search');
 		$model->unsetAttributes();  // clear any default values
-		if(isset($_GET['Issue']))
-			$model->attributes=$_GET['Issue'];
-
-    $model->project_id = $this->_project->id;
+		if(isset($_GET['User']))
+			$model->attributes=$_GET['User'];
 
 		$this->render('admin',array(
 			'model'=>$model,
@@ -206,7 +150,7 @@ class IssueController extends Controller
 	 */
 	public function loadModel($id)
 	{
-		$model=Issue::model()->findByPk($id);
+		$model=User::model()->findByPk($id);
 		if($model===null)
 			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;
@@ -218,19 +162,10 @@ class IssueController extends Controller
 	 */
 	protected function performAjaxValidation($model)
 	{
-		if(isset($_POST['ajax']) && $_POST['ajax']==='issue-form')
+		if(isset($_POST['ajax']) && $_POST['ajax']==='user-form')
 		{
 			echo CActiveForm::validate($model);
 			Yii::app()->end();
 		}
 	}
-
-  /**
-    * * Returns the project model instance to which this issue belongs
-    * */
-  public function getProject()
-  {
-    return $this->_project;
-  }
-
 }

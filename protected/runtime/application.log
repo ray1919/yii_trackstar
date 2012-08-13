@@ -533,3 +533,1101 @@ REQUEST_URI=/~zhao/yii/trackstar/index.php/issue/index?pid=1
 in /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php (179)
 in /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php (46)
 in /home/zhao/public_html/yii/trackstar/index.php (13)
+2012/08/13 11:03:48 [error] [php] Trying to get property of non-object (/home/zhao/public_html/yii/trackstar/protected/views/issue/view.php:37)
+Stack trace:
+#0 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(870): IssueController->renderFile()
+#1 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(783): IssueController->renderPartial()
+#2 /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php(100): IssueController->render()
+#3 unknown(0): IssueController->actionView()
+#4 /home/zhao/installer/yii-1.1.11.58da45/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#5 /home/zhao/installer/yii-1.1.11.58da45/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#6 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(309): CInlineAction->runWithParams()
+#7 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(134): IssueController->runAction()
+#8 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#9 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#10 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): IssueController->filterAccessControl()
+#11 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#12 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(292): CFilterChain->run()
+#13 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(266): IssueController->runActionWithFilters()
+#14 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(283): IssueController->run()
+#15 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#16 /home/zhao/installer/yii-1.1.11.58da45/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /home/zhao/public_html/yii/trackstar/index.php(13): CWebApplication->run()
+REQUEST_URI=/~zhao/yii/trackstar/index.php/issue/8
+in /home/zhao/public_html/yii/trackstar/protected/views/issue/view.php (37)
+in /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php (100)
+in /home/zhao/public_html/yii/trackstar/index.php (13)
+2012/08/13 11:04:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested project does not
+              exist.' in /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php:22
+Stack trace:
+#0 /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php(44): IssueController->loadProject(NULL)
+#1 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): IssueController->filterProjectContext(Object(CFilterChain))
+#2 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#3 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#4 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#5 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#6 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#7 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(292): CFilterChain->run()
+#8 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(283): CController->run('index')
+#10 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(142): CWebApplication->runController('issue/index')
+#11 /home/zhao/installer/yii-1.1.11.58da45/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#12 /home/zhao/public_html/yii/trackstar/index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/~zhao/yii/trackstar/index.php/issue/index
+HTTP_REFERER=http://192.168.183.131/~zhao/yii/trackstar/index.php/issue/create?pid=2
+---
+2012/08/13 11:04:24 [error] [php] Trying to get property of non-object (/home/zhao/public_html/yii/trackstar/protected/views/issue/view.php:37)
+Stack trace:
+#0 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(870): IssueController->renderFile()
+#1 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(783): IssueController->renderPartial()
+#2 /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php(100): IssueController->render()
+#3 unknown(0): IssueController->actionView()
+#4 /home/zhao/installer/yii-1.1.11.58da45/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#5 /home/zhao/installer/yii-1.1.11.58da45/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#6 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(309): CInlineAction->runWithParams()
+#7 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(134): IssueController->runAction()
+#8 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#9 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#10 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): IssueController->filterAccessControl()
+#11 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#12 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(292): CFilterChain->run()
+#13 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(266): IssueController->runActionWithFilters()
+#14 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(283): IssueController->run()
+#15 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#16 /home/zhao/installer/yii-1.1.11.58da45/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /home/zhao/public_html/yii/trackstar/index.php(13): CWebApplication->run()
+REQUEST_URI=/~zhao/yii/trackstar/index.php/issue/2
+in /home/zhao/public_html/yii/trackstar/protected/views/issue/view.php (37)
+in /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php (100)
+in /home/zhao/public_html/yii/trackstar/index.php (13)
+2012/08/13 13:11:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "user".' in /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(142): CWebApplication->runController('user')
+#1 /home/zhao/installer/yii-1.1.11.58da45/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/zhao/public_html/yii/trackstar/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/~zhao/yii/trackstar/user
+---
+2012/08/13 13:12:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/5e4676c/css/src/grid.png".' in /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/5e4676c/...')
+#1 /home/zhao/installer/yii-1.1.11.58da45/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/zhao/public_html/yii/trackstar/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/~zhao/yii/trackstar/assets/5e4676c/css/src/grid.png
+---
+2012/08/13 14:05:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/5e4676c/css/src/grid.png".' in /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(142): CWebApplication->runController('assets/5e4676c/...')
+#1 /home/zhao/installer/yii-1.1.11.58da45/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/zhao/public_html/yii/trackstar/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/~zhao/yii/trackstar/assets/5e4676c/css/src/grid.png
+---
+2012/08/13 14:42:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested project does not
+              exist.' in /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php:22
+Stack trace:
+#0 /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php(44): IssueController->loadProject(NULL)
+#1 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): IssueController->filterProjectContext(Object(CFilterChain))
+#2 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#3 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#4 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#5 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#6 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#7 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(292): CFilterChain->run()
+#8 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(283): CController->run('index')
+#10 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(142): CWebApplication->runController('issue/index')
+#11 /home/zhao/installer/yii-1.1.11.58da45/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#12 /home/zhao/public_html/yii/trackstar/index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/~zhao/yii/trackstar/index.php/issue/index
+HTTP_REFERER=http://192.168.183.131/~zhao/yii/trackstar/index.php/issue/admin?pid=1
+---
+2012/08/13 14:42:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested project does not
+              exist.' in /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php:22
+Stack trace:
+#0 /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php(44): IssueController->loadProject(NULL)
+#1 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): IssueController->filterProjectContext(Object(CFilterChain))
+#2 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#3 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#4 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#5 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#6 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#7 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(292): CFilterChain->run()
+#8 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(283): CController->run('create')
+#10 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(142): CWebApplication->runController('issue/create')
+#11 /home/zhao/installer/yii-1.1.11.58da45/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#12 /home/zhao/public_html/yii/trackstar/index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/~zhao/yii/trackstar/index.php/issue/create
+HTTP_REFERER=http://192.168.183.131/~zhao/yii/trackstar/index.php/issue/admin?pid=1
+---
+2012/08/13 14:46:09 [error] [php] Undefined variable: model (/home/zhao/public_html/yii/trackstar/protected/views/issue/index.php:10)
+Stack trace:
+#0 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(870): IssueController->renderFile()
+#1 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(783): IssueController->renderPartial()
+#2 /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php(179): IssueController->render()
+#3 /home/zhao/installer/yii-1.1.11.58da45/framework/web/actions/CInlineAction.php(50): IssueController->actionIndex()
+#4 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(134): IssueController->runAction()
+#6 /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php(46): CFilterChain->run()
+#7 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): IssueController->filterProjectContext()
+#8 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#9 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#10 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#11 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): IssueController->filterAccessControl()
+#12 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#13 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(292): CFilterChain->run()
+#14 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(266): IssueController->runActionWithFilters()
+#15 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(283): IssueController->run()
+#16 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#17 /home/zhao/installer/yii-1.1.11.58da45/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /home/zhao/public_html/yii/trackstar/index.php(13): CWebApplication->run()
+REQUEST_URI=/~zhao/yii/trackstar/index.php/issue/index?pid=1
+in /home/zhao/public_html/yii/trackstar/protected/views/issue/index.php (10)
+in /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php (179)
+in /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php (46)
+2012/08/13 14:46:31 [error] [php] Undefined variable: model (/home/zhao/public_html/yii/trackstar/protected/views/issue/index.php:10)
+Stack trace:
+#0 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(870): IssueController->renderFile()
+#1 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(783): IssueController->renderPartial()
+#2 /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php(179): IssueController->render()
+#3 /home/zhao/installer/yii-1.1.11.58da45/framework/web/actions/CInlineAction.php(50): IssueController->actionIndex()
+#4 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(134): IssueController->runAction()
+#6 /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php(46): CFilterChain->run()
+#7 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): IssueController->filterProjectContext()
+#8 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#9 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#10 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#11 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): IssueController->filterAccessControl()
+#12 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#13 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(292): CFilterChain->run()
+#14 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(266): IssueController->runActionWithFilters()
+#15 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(283): IssueController->run()
+#16 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#17 /home/zhao/installer/yii-1.1.11.58da45/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /home/zhao/public_html/yii/trackstar/index.php(13): CWebApplication->run()
+REQUEST_URI=/~zhao/yii/trackstar/index.php/issue/index?pid=1
+in /home/zhao/public_html/yii/trackstar/protected/views/issue/index.php (10)
+in /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php (179)
+in /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php (46)
+2012/08/13 14:46:44 [error] [php] Undefined variable: model (/home/zhao/public_html/yii/trackstar/protected/views/issue/index.php:10)
+Stack trace:
+#0 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(870): IssueController->renderFile()
+#1 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(783): IssueController->renderPartial()
+#2 /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php(179): IssueController->render()
+#3 /home/zhao/installer/yii-1.1.11.58da45/framework/web/actions/CInlineAction.php(50): IssueController->actionIndex()
+#4 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(134): IssueController->runAction()
+#6 /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php(46): CFilterChain->run()
+#7 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): IssueController->filterProjectContext()
+#8 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#9 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#10 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#11 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): IssueController->filterAccessControl()
+#12 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#13 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(292): CFilterChain->run()
+#14 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(266): IssueController->runActionWithFilters()
+#15 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(283): IssueController->run()
+#16 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#17 /home/zhao/installer/yii-1.1.11.58da45/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /home/zhao/public_html/yii/trackstar/index.php(13): CWebApplication->run()
+REQUEST_URI=/~zhao/yii/trackstar/index.php/issue/index?pid=1
+in /home/zhao/public_html/yii/trackstar/protected/views/issue/index.php (10)
+in /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php (179)
+in /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php (46)
+2012/08/13 14:47:18 [error] [php] Undefined variable: model (/home/zhao/public_html/yii/trackstar/protected/views/issue/index.php:10)
+Stack trace:
+#0 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(870): IssueController->renderFile()
+#1 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(783): IssueController->renderPartial()
+#2 /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php(179): IssueController->render()
+#3 /home/zhao/installer/yii-1.1.11.58da45/framework/web/actions/CInlineAction.php(50): IssueController->actionIndex()
+#4 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(134): IssueController->runAction()
+#6 /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php(46): CFilterChain->run()
+#7 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): IssueController->filterProjectContext()
+#8 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#9 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#10 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#11 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): IssueController->filterAccessControl()
+#12 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#13 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(292): CFilterChain->run()
+#14 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(266): IssueController->runActionWithFilters()
+#15 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(283): IssueController->run()
+#16 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#17 /home/zhao/installer/yii-1.1.11.58da45/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /home/zhao/public_html/yii/trackstar/index.php(13): CWebApplication->run()
+REQUEST_URI=/~zhao/yii/trackstar/index.php/issue/index?pid=1
+in /home/zhao/public_html/yii/trackstar/protected/views/issue/index.php (10)
+in /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php (179)
+in /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php (46)
+2012/08/13 14:47:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested project does not
+              exist.' in /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php:22
+Stack trace:
+#0 /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php(44): IssueController->loadProject(NULL)
+#1 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): IssueController->filterProjectContext(Object(CFilterChain))
+#2 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#3 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#4 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#5 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#6 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#7 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(292): CFilterChain->run()
+#8 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(283): CController->run('index')
+#10 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(142): CWebApplication->runController('issue/index')
+#11 /home/zhao/installer/yii-1.1.11.58da45/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#12 /home/zhao/public_html/yii/trackstar/index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/~zhao/yii/trackstar/index.php/issue/index
+HTTP_REFERER=http://192.168.183.131/~zhao/yii/trackstar/index.php/issue/4
+---
+2012/08/13 14:48:06 [error] [php] Undefined variable: model (/home/zhao/public_html/yii/trackstar/protected/views/issue/index.php:10)
+Stack trace:
+#0 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(870): IssueController->renderFile()
+#1 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(783): IssueController->renderPartial()
+#2 /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php(179): IssueController->render()
+#3 /home/zhao/installer/yii-1.1.11.58da45/framework/web/actions/CInlineAction.php(50): IssueController->actionIndex()
+#4 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(134): IssueController->runAction()
+#6 /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php(46): CFilterChain->run()
+#7 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): IssueController->filterProjectContext()
+#8 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#9 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#10 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#11 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): IssueController->filterAccessControl()
+#12 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#13 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(292): CFilterChain->run()
+#14 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(266): IssueController->runActionWithFilters()
+#15 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(283): IssueController->run()
+#16 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#17 /home/zhao/installer/yii-1.1.11.58da45/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /home/zhao/public_html/yii/trackstar/index.php(13): CWebApplication->run()
+REQUEST_URI=/~zhao/yii/trackstar/index.php/issue/index?pid=1
+in /home/zhao/public_html/yii/trackstar/protected/views/issue/index.php (10)
+in /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php (179)
+in /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php (46)
+2012/08/13 14:53:48 [error] [php] Undefined variable: model (/home/zhao/public_html/yii/trackstar/protected/views/issue/index.php:10)
+Stack trace:
+#0 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(870): IssueController->renderFile()
+#1 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(783): IssueController->renderPartial()
+#2 /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php(179): IssueController->render()
+#3 /home/zhao/installer/yii-1.1.11.58da45/framework/web/actions/CInlineAction.php(50): IssueController->actionIndex()
+#4 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(134): IssueController->runAction()
+#6 /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php(46): CFilterChain->run()
+#7 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): IssueController->filterProjectContext()
+#8 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#9 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#10 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#11 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): IssueController->filterAccessControl()
+#12 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#13 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(292): CFilterChain->run()
+#14 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(266): IssueController->runActionWithFilters()
+#15 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(283): IssueController->run()
+#16 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#17 /home/zhao/installer/yii-1.1.11.58da45/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /home/zhao/public_html/yii/trackstar/index.php(13): CWebApplication->run()
+REQUEST_URI=/~zhao/yii/trackstar/index.php/issue/index?pid=1
+in /home/zhao/public_html/yii/trackstar/protected/views/issue/index.php (10)
+in /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php (179)
+in /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php (46)
+2012/08/13 14:56:11 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php:337
+Stack trace:
+#0 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php(46): CFilterChain->run()
+#3 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): IssueController->filterProjectContext(Object(CFilterChain))
+#4 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(292): CFilterChain->run()
+#10 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(283): CController->run('update')
+#12 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(142): CWebApplication->runController('issue/update')
+#13 /home/zhao/installer/yii-1.1.11.58da45/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /home/zhao/public_html/yii/trackstar/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/~zhao/yii/trackstar/index.php/issue/update?pid=1
+HTTP_REFERER=http://192.168.183.131/~zhao/yii/trackstar/index.php/issue/4
+---
+2012/08/13 14:56:20 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php:337
+Stack trace:
+#0 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php(46): CFilterChain->run()
+#3 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): IssueController->filterProjectContext(Object(CFilterChain))
+#4 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(292): CFilterChain->run()
+#10 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(283): CController->run('update')
+#12 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(142): CWebApplication->runController('issue/update')
+#13 /home/zhao/installer/yii-1.1.11.58da45/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /home/zhao/public_html/yii/trackstar/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/~zhao/yii/trackstar/index.php/issue/update?pid=1
+HTTP_REFERER=http://192.168.183.131/~zhao/yii/trackstar/index.php/issue/4
+---
+2012/08/13 14:56:43 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php:337
+Stack trace:
+#0 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php(46): CFilterChain->run()
+#3 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): IssueController->filterProjectContext(Object(CFilterChain))
+#4 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(292): CFilterChain->run()
+#10 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(283): CController->run('update')
+#12 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(142): CWebApplication->runController('issue/update')
+#13 /home/zhao/installer/yii-1.1.11.58da45/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /home/zhao/public_html/yii/trackstar/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/~zhao/yii/trackstar/index.php/issue/update?pid=1
+HTTP_REFERER=http://192.168.183.131/~zhao/yii/trackstar/index.php/issue/4
+---
+2012/08/13 14:57:20 [error] [php] Undefined variable: model (/home/zhao/public_html/yii/trackstar/protected/views/issue/index.php:10)
+Stack trace:
+#0 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(870): IssueController->renderFile()
+#1 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(783): IssueController->renderPartial()
+#2 /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php(179): IssueController->render()
+#3 /home/zhao/installer/yii-1.1.11.58da45/framework/web/actions/CInlineAction.php(50): IssueController->actionIndex()
+#4 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(134): IssueController->runAction()
+#6 /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php(46): CFilterChain->run()
+#7 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): IssueController->filterProjectContext()
+#8 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#9 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#10 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#11 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): IssueController->filterAccessControl()
+#12 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#13 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(292): CFilterChain->run()
+#14 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(266): IssueController->runActionWithFilters()
+#15 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(283): IssueController->run()
+#16 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#17 /home/zhao/installer/yii-1.1.11.58da45/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /home/zhao/public_html/yii/trackstar/index.php(13): CWebApplication->run()
+REQUEST_URI=/~zhao/yii/trackstar/index.php/issue/index?pid=1
+in /home/zhao/public_html/yii/trackstar/protected/views/issue/index.php (10)
+in /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php (179)
+in /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php (46)
+2012/08/13 14:58:37 [error] [php] Undefined variable: model (/home/zhao/public_html/yii/trackstar/protected/views/issue/index.php:11)
+Stack trace:
+#0 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(870): IssueController->renderFile()
+#1 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(783): IssueController->renderPartial()
+#2 /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php(179): IssueController->render()
+#3 /home/zhao/installer/yii-1.1.11.58da45/framework/web/actions/CInlineAction.php(50): IssueController->actionIndex()
+#4 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(134): IssueController->runAction()
+#6 /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php(46): CFilterChain->run()
+#7 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): IssueController->filterProjectContext()
+#8 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#9 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#10 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#11 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): IssueController->filterAccessControl()
+#12 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#13 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(292): CFilterChain->run()
+#14 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(266): IssueController->runActionWithFilters()
+#15 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(283): IssueController->run()
+#16 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#17 /home/zhao/installer/yii-1.1.11.58da45/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /home/zhao/public_html/yii/trackstar/index.php(13): CWebApplication->run()
+REQUEST_URI=/~zhao/yii/trackstar/index.php/issue/index?pid=1
+in /home/zhao/public_html/yii/trackstar/protected/views/issue/index.php (11)
+in /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php (179)
+in /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php (46)
+2012/08/13 15:03:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested project does not
+              exist.' in /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php:22
+Stack trace:
+#0 /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php(44): IssueController->loadProject(NULL)
+#1 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): IssueController->filterProjectContext(Object(CFilterChain))
+#2 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#3 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#4 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#5 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#6 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#7 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(292): CFilterChain->run()
+#8 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(283): CController->run('index')
+#10 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(142): CWebApplication->runController('issue/index')
+#11 /home/zhao/installer/yii-1.1.11.58da45/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#12 /home/zhao/public_html/yii/trackstar/index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/~zhao/yii/trackstar/index.php/issue/index
+HTTP_REFERER=http://192.168.183.131/~zhao/yii/trackstar/index.php/issue/admin?pid=1
+---
+2012/08/13 15:03:30 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php:337
+Stack trace:
+#0 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php(46): CFilterChain->run()
+#3 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): IssueController->filterProjectContext(Object(CFilterChain))
+#4 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(292): CFilterChain->run()
+#10 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(283): CController->run('index')
+#12 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(142): CWebApplication->runController('issue/index')
+#13 /home/zhao/installer/yii-1.1.11.58da45/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /home/zhao/public_html/yii/trackstar/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/~zhao/yii/trackstar/index.php/issue/index?pid=1
+HTTP_REFERER=http://192.168.183.131/~zhao/yii/trackstar/index.php/issue/admin?pid=1
+---
+2012/08/13 15:03:44 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php:337
+Stack trace:
+#0 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php(46): CFilterChain->run()
+#3 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): IssueController->filterProjectContext(Object(CFilterChain))
+#4 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(292): CFilterChain->run()
+#10 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(283): CController->run('index')
+#12 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(142): CWebApplication->runController('issue/index')
+#13 /home/zhao/installer/yii-1.1.11.58da45/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /home/zhao/public_html/yii/trackstar/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/~zhao/yii/trackstar/index.php/issue/index?pid=1
+HTTP_REFERER=http://192.168.183.131/~zhao/yii/trackstar/index.php/issue/4
+---
+2012/08/13 15:04:02 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php:337
+Stack trace:
+#0 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php(46): CFilterChain->run()
+#3 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): IssueController->filterProjectContext(Object(CFilterChain))
+#4 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(292): CFilterChain->run()
+#10 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(283): CController->run('index')
+#12 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(142): CWebApplication->runController('issue/index')
+#13 /home/zhao/installer/yii-1.1.11.58da45/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /home/zhao/public_html/yii/trackstar/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/~zhao/yii/trackstar/index.php/issue/index?pid=1
+HTTP_REFERER=http://192.168.183.131/~zhao/yii/trackstar/index.php/issue/4
+---
+2012/08/13 15:04:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested project does not
+              exist.' in /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php:22
+Stack trace:
+#0 /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php(44): IssueController->loadProject(NULL)
+#1 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): IssueController->filterProjectContext(Object(CFilterChain))
+#2 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#3 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#4 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#5 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#6 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#7 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(292): CFilterChain->run()
+#8 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(283): CController->run('index')
+#10 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(142): CWebApplication->runController('issue/index')
+#11 /home/zhao/installer/yii-1.1.11.58da45/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#12 /home/zhao/public_html/yii/trackstar/index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/~zhao/yii/trackstar/index.php/issue/index
+---
+2012/08/13 15:04:14 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php:337
+Stack trace:
+#0 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php(46): CFilterChain->run()
+#3 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): IssueController->filterProjectContext(Object(CFilterChain))
+#4 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(292): CFilterChain->run()
+#10 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(283): CController->run('index')
+#12 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(142): CWebApplication->runController('issue/index')
+#13 /home/zhao/installer/yii-1.1.11.58da45/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /home/zhao/public_html/yii/trackstar/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/~zhao/yii/trackstar/index.php/issue/index?pid=1
+HTTP_REFERER=http://192.168.183.131/~zhao/yii/trackstar/index.php/issue/4
+---
+2012/08/13 15:04:53 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php:337
+Stack trace:
+#0 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php(46): CFilterChain->run()
+#3 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): IssueController->filterProjectContext(Object(CFilterChain))
+#4 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(292): CFilterChain->run()
+#10 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(283): CController->run('index')
+#12 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(142): CWebApplication->runController('issue/index')
+#13 /home/zhao/installer/yii-1.1.11.58da45/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /home/zhao/public_html/yii/trackstar/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/~zhao/yii/trackstar/index.php/issue/index?pid=1
+HTTP_REFERER=http://192.168.183.131/~zhao/yii/trackstar/index.php/issue/4
+---
+2012/08/13 15:05:28 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php:337
+Stack trace:
+#0 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php(46): CFilterChain->run()
+#3 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): IssueController->filterProjectContext(Object(CFilterChain))
+#4 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(292): CFilterChain->run()
+#10 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(283): CController->run('index')
+#12 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(142): CWebApplication->runController('issue/index')
+#13 /home/zhao/installer/yii-1.1.11.58da45/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /home/zhao/public_html/yii/trackstar/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/~zhao/yii/trackstar/index.php/issue/index?pid=1
+HTTP_REFERER=http://192.168.183.131/~zhao/yii/trackstar/index.php/issue/4
+---
+2012/08/13 15:06:26 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php:337
+Stack trace:
+#0 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php(46): CFilterChain->run()
+#3 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): IssueController->filterProjectContext(Object(CFilterChain))
+#4 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(292): CFilterChain->run()
+#10 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(283): CController->run('index')
+#12 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(142): CWebApplication->runController('issue/index')
+#13 /home/zhao/installer/yii-1.1.11.58da45/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /home/zhao/public_html/yii/trackstar/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/~zhao/yii/trackstar/index.php/issue/index?pid=1
+HTTP_REFERER=http://192.168.183.131/~zhao/yii/trackstar/index.php/issue/4
+---
+2012/08/13 15:06:30 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php:337
+Stack trace:
+#0 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php(46): CFilterChain->run()
+#3 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): IssueController->filterProjectContext(Object(CFilterChain))
+#4 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(292): CFilterChain->run()
+#10 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(283): CController->run('index')
+#12 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(142): CWebApplication->runController('issue/index')
+#13 /home/zhao/installer/yii-1.1.11.58da45/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /home/zhao/public_html/yii/trackstar/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/~zhao/yii/trackstar/index.php/issue/index?pid=1
+HTTP_REFERER=http://192.168.183.131/~zhao/yii/trackstar/index.php/issue/4
+---
+2012/08/13 15:07:07 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php:337
+Stack trace:
+#0 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php(46): CFilterChain->run()
+#3 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): IssueController->filterProjectContext(Object(CFilterChain))
+#4 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(292): CFilterChain->run()
+#10 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(283): CController->run('index')
+#12 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(142): CWebApplication->runController('issue/index')
+#13 /home/zhao/installer/yii-1.1.11.58da45/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /home/zhao/public_html/yii/trackstar/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/~zhao/yii/trackstar/index.php/issue/index?pid=1
+HTTP_REFERER=http://192.168.183.131/~zhao/yii/trackstar/index.php/issue/4
+---
+2012/08/13 15:09:15 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php:337
+Stack trace:
+#0 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php(46): CFilterChain->run()
+#3 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): IssueController->filterProjectContext(Object(CFilterChain))
+#4 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#6 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#7 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#8 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#9 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(292): CFilterChain->run()
+#10 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#11 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(283): CController->run('index')
+#12 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(142): CWebApplication->runController('issue/index')
+#13 /home/zhao/installer/yii-1.1.11.58da45/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#14 /home/zhao/public_html/yii/trackstar/index.php(13): CApplication->run()
+#15 {main}
+REQUEST_URI=/~zhao/yii/trackstar/index.php/issue/index?pid=1
+HTTP_REFERER=http://192.168.183.131/~zhao/yii/trackstar/index.php/issue/4
+---
+2012/08/13 15:09:59 [error] [php] Trying to get property of non-object (/home/zhao/public_html/yii/trackstar/protected/views/issue/view.php:37)
+Stack trace:
+#0 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(870): IssueController->renderFile()
+#1 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(783): IssueController->renderPartial()
+#2 /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php(100): IssueController->render()
+#3 unknown(0): IssueController->actionView()
+#4 /home/zhao/installer/yii-1.1.11.58da45/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#5 /home/zhao/installer/yii-1.1.11.58da45/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#6 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(309): CInlineAction->runWithParams()
+#7 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(134): IssueController->runAction()
+#8 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#9 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#10 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): IssueController->filterAccessControl()
+#11 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#12 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(292): CFilterChain->run()
+#13 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(266): IssueController->runActionWithFilters()
+#14 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(283): IssueController->run()
+#15 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#16 /home/zhao/installer/yii-1.1.11.58da45/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /home/zhao/public_html/yii/trackstar/index.php(13): CWebApplication->run()
+REQUEST_URI=/~zhao/yii/trackstar/index.php/issue/2
+in /home/zhao/public_html/yii/trackstar/protected/views/issue/view.php (37)
+in /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php (100)
+in /home/zhao/public_html/yii/trackstar/index.php (13)
+2012/08/13 15:10:05 [error] [php] Trying to get property of non-object (/home/zhao/public_html/yii/trackstar/protected/views/issue/view.php:37)
+Stack trace:
+#0 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(870): IssueController->renderFile()
+#1 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(783): IssueController->renderPartial()
+#2 /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php(100): IssueController->render()
+#3 unknown(0): IssueController->actionView()
+#4 /home/zhao/installer/yii-1.1.11.58da45/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#5 /home/zhao/installer/yii-1.1.11.58da45/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#6 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(309): CInlineAction->runWithParams()
+#7 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(134): IssueController->runAction()
+#8 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#9 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#10 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): IssueController->filterAccessControl()
+#11 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#12 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(292): CFilterChain->run()
+#13 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(266): IssueController->runActionWithFilters()
+#14 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(283): IssueController->run()
+#15 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#16 /home/zhao/installer/yii-1.1.11.58da45/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /home/zhao/public_html/yii/trackstar/index.php(13): CWebApplication->run()
+REQUEST_URI=/~zhao/yii/trackstar/index.php/issue/8
+in /home/zhao/public_html/yii/trackstar/protected/views/issue/view.php (37)
+in /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php (100)
+in /home/zhao/public_html/yii/trackstar/index.php (13)
+2012/08/13 15:10:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested project does not
+              exist.' in /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php:22
+Stack trace:
+#0 /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php(44): IssueController->loadProject(NULL)
+#1 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): IssueController->filterProjectContext(Object(CFilterChain))
+#2 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#3 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#4 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#5 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#6 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#7 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(292): CFilterChain->run()
+#8 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(283): CController->run('create')
+#10 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(142): CWebApplication->runController('issue/create')
+#11 /home/zhao/installer/yii-1.1.11.58da45/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#12 /home/zhao/public_html/yii/trackstar/index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/~zhao/yii/trackstar/index.php/issue/create
+HTTP_REFERER=http://192.168.183.131/~zhao/yii/trackstar/index.php/issue/index?pid=1
+---
+2012/08/13 15:10:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested project does not
+              exist.' in /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php:22
+Stack trace:
+#0 /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php(44): IssueController->loadProject(NULL)
+#1 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): IssueController->filterProjectContext(Object(CFilterChain))
+#2 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#3 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#4 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#5 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#6 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#7 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(292): CFilterChain->run()
+#8 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(283): CController->run('admin')
+#10 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(142): CWebApplication->runController('issue/admin')
+#11 /home/zhao/installer/yii-1.1.11.58da45/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#12 /home/zhao/public_html/yii/trackstar/index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/~zhao/yii/trackstar/index.php/issue/admin
+HTTP_REFERER=http://192.168.183.131/~zhao/yii/trackstar/index.php/issue/index?pid=1
+---
+2012/08/13 15:11:13 [error] [php] Undefined variable: model (/home/zhao/public_html/yii/trackstar/protected/views/issue/index.php:10)
+Stack trace:
+#0 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(870): IssueController->renderFile()
+#1 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(783): IssueController->renderPartial()
+#2 /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php(179): IssueController->render()
+#3 /home/zhao/installer/yii-1.1.11.58da45/framework/web/actions/CInlineAction.php(50): IssueController->actionIndex()
+#4 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(134): IssueController->runAction()
+#6 /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php(46): CFilterChain->run()
+#7 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): IssueController->filterProjectContext()
+#8 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#9 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#10 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#11 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): IssueController->filterAccessControl()
+#12 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#13 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(292): CFilterChain->run()
+#14 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(266): IssueController->runActionWithFilters()
+#15 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(283): IssueController->run()
+#16 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#17 /home/zhao/installer/yii-1.1.11.58da45/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /home/zhao/public_html/yii/trackstar/index.php(13): CWebApplication->run()
+REQUEST_URI=/~zhao/yii/trackstar/index.php/issue/index?pid=1
+in /home/zhao/public_html/yii/trackstar/protected/views/issue/index.php (10)
+in /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php (179)
+in /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php (46)
+2012/08/13 15:13:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested project does not
+              exist.' in /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php:22
+Stack trace:
+#0 /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php(44): IssueController->loadProject(NULL)
+#1 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): IssueController->filterProjectContext(Object(CFilterChain))
+#2 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#3 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#4 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#5 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#6 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#7 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(292): CFilterChain->run()
+#8 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(283): CController->run('update')
+#10 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(142): CWebApplication->runController('issue/update')
+#11 /home/zhao/installer/yii-1.1.11.58da45/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#12 /home/zhao/public_html/yii/trackstar/index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/~zhao/yii/trackstar/index.php/issue/update/4
+HTTP_REFERER=http://192.168.183.131/~zhao/yii/trackstar/index.php/issue/admin?pid=1
+---
+2012/08/13 15:13:59 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested project does not
+              exist.' in /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php:22
+Stack trace:
+#0 /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php(44): IssueController->loadProject(NULL)
+#1 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): IssueController->filterProjectContext(Object(CFilterChain))
+#2 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#3 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#4 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#5 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#6 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#7 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(292): CFilterChain->run()
+#8 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(283): CController->run('update')
+#10 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(142): CWebApplication->runController('issue/update')
+#11 /home/zhao/installer/yii-1.1.11.58da45/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#12 /home/zhao/public_html/yii/trackstar/index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/~zhao/yii/trackstar/index.php/issue/update/6
+HTTP_REFERER=http://192.168.183.131/~zhao/yii/trackstar/index.php/issue/admin?pid=1
+---
+2012/08/13 15:16:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested project does not
+              exist.' in /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php:22
+Stack trace:
+#0 /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php(44): IssueController->loadProject(NULL)
+#1 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): IssueController->filterProjectContext(Object(CFilterChain))
+#2 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#3 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#4 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#5 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#6 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#7 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(292): CFilterChain->run()
+#8 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(283): CController->run('update')
+#10 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(142): CWebApplication->runController('issue/update')
+#11 /home/zhao/installer/yii-1.1.11.58da45/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#12 /home/zhao/public_html/yii/trackstar/index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/~zhao/yii/trackstar/index.php/issue/update/4
+HTTP_REFERER=http://192.168.183.131/~zhao/yii/trackstar/index.php/issue/admin?pid=1
+---
+2012/08/13 15:16:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested project does not
+              exist.' in /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php:22
+Stack trace:
+#0 /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php(44): IssueController->loadProject(NULL)
+#1 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): IssueController->filterProjectContext(Object(CFilterChain))
+#2 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#3 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#4 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#5 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#6 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#7 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(292): CFilterChain->run()
+#8 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(283): CController->run('update')
+#10 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(142): CWebApplication->runController('issue/update')
+#11 /home/zhao/installer/yii-1.1.11.58da45/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#12 /home/zhao/public_html/yii/trackstar/index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/~zhao/yii/trackstar/index.php/issue/update/7
+HTTP_REFERER=http://192.168.183.131/~zhao/yii/trackstar/index.php/issue/admin?pid=1
+---
+2012/08/13 15:23:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested project does not
+              exist.' in /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php:22
+Stack trace:
+#0 /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php(44): IssueController->loadProject(NULL)
+#1 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): IssueController->filterProjectContext(Object(CFilterChain))
+#2 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#3 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#4 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#5 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#6 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#7 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(292): CFilterChain->run()
+#8 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(283): CController->run('index')
+#10 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(142): CWebApplication->runController('issue/index')
+#11 /home/zhao/installer/yii-1.1.11.58da45/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#12 /home/zhao/public_html/yii/trackstar/index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/~zhao/yii/trackstar/index.php/issue/index
+HTTP_REFERER=http://192.168.183.131/~zhao/yii/trackstar/index.php/issue/update/6?pid=1
+---
+2012/08/13 15:24:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested project does not
+              exist.' in /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php:22
+Stack trace:
+#0 /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php(44): IssueController->loadProject(NULL)
+#1 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): IssueController->filterProjectContext(Object(CFilterChain))
+#2 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#3 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#4 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#5 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#6 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#7 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(292): CFilterChain->run()
+#8 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(283): CController->run('update')
+#10 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(142): CWebApplication->runController('issue/update')
+#11 /home/zhao/installer/yii-1.1.11.58da45/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#12 /home/zhao/public_html/yii/trackstar/index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/~zhao/yii/trackstar/index.php/issue/update/4
+HTTP_REFERER=http://192.168.183.131/~zhao/yii/trackstar/index.php/issue/admin?pid=1
+---
+2012/08/13 15:27:31 [error] [php] include(CButtonColumn.php): failed to open stream: No such file or directory (/home/zhao/installer/yii-1.1.11.58da45/framework/YiiBase.php:423)
+Stack trace:
+#0 /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php(238): spl_autoload_call()
+#1 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(355): require()
+#2 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(277): CWebApplication->createController()
+#3 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#4 /home/zhao/installer/yii-1.1.11.58da45/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /home/zhao/public_html/yii/trackstar/index.php(13): CWebApplication->run()
+REQUEST_URI=/~zhao/yii/trackstar/index.php/issue/admin?pid=1
+in /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php (238)
+in /home/zhao/public_html/yii/trackstar/index.php (13)
+2012/08/13 15:28:37 [error] [php] include(CButtonColumn.php): failed to open stream: No such file or directory (/home/zhao/installer/yii-1.1.11.58da45/framework/YiiBase.php:423)
+Stack trace:
+#0 /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php(238): spl_autoload_call()
+#1 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(355): require()
+#2 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(277): CWebApplication->createController()
+#3 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#4 /home/zhao/installer/yii-1.1.11.58da45/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /home/zhao/public_html/yii/trackstar/index.php(13): CWebApplication->run()
+REQUEST_URI=/~zhao/yii/trackstar/index.php/issue/admin?pid=1
+in /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php (238)
+in /home/zhao/public_html/yii/trackstar/index.php (13)
+2012/08/13 15:28:37 [error] [php] include(CButtonColumn.php): failed to open stream: No such file or directory (/home/zhao/installer/yii-1.1.11.58da45/framework/YiiBase.php:423)
+Stack trace:
+#0 /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php(238): spl_autoload_call()
+#1 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(355): require()
+#2 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(277): CWebApplication->createController()
+#3 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#4 /home/zhao/installer/yii-1.1.11.58da45/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /home/zhao/public_html/yii/trackstar/index.php(13): CWebApplication->run()
+REQUEST_URI=/~zhao/yii/trackstar/index.php/issue/admin?pid=1
+in /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php (238)
+in /home/zhao/public_html/yii/trackstar/index.php (13)
+2012/08/13 15:28:38 [error] [php] include(CButtonColumn.php): failed to open stream: No such file or directory (/home/zhao/installer/yii-1.1.11.58da45/framework/YiiBase.php:423)
+Stack trace:
+#0 /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php(238): spl_autoload_call()
+#1 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(355): require()
+#2 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(277): CWebApplication->createController()
+#3 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#4 /home/zhao/installer/yii-1.1.11.58da45/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /home/zhao/public_html/yii/trackstar/index.php(13): CWebApplication->run()
+REQUEST_URI=/~zhao/yii/trackstar/index.php/issue/admin?pid=1
+in /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php (238)
+in /home/zhao/public_html/yii/trackstar/index.php (13)
+2012/08/13 15:28:39 [error] [php] include(CButtonColumn.php): failed to open stream: No such file or directory (/home/zhao/installer/yii-1.1.11.58da45/framework/YiiBase.php:423)
+Stack trace:
+#0 /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php(238): spl_autoload_call()
+#1 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(355): require()
+#2 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(277): CWebApplication->createController()
+#3 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#4 /home/zhao/installer/yii-1.1.11.58da45/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /home/zhao/public_html/yii/trackstar/index.php(13): CWebApplication->run()
+REQUEST_URI=/~zhao/yii/trackstar/index.php/issue/admin?pid=1
+in /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php (238)
+in /home/zhao/public_html/yii/trackstar/index.php (13)
+2012/08/13 15:37:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "project".' in /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php:484
+Stack trace:
+#0 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(271): CController->missingAction('project')
+#1 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(283): CController->run('project')
+#2 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(142): CWebApplication->runController('issue/project')
+#3 /home/zhao/installer/yii-1.1.11.58da45/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/zhao/public_html/yii/trackstar/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/~zhao/yii/trackstar/index.php/issue/project
+HTTP_REFERER=http://192.168.183.131/~zhao/yii/trackstar/index.php/issue/admin?pid=1
+---
+2012/08/13 15:39:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "0".' in /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php:484
+Stack trace:
+#0 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(271): CController->missingAction('0')
+#1 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(283): CController->run('0')
+#2 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(142): CWebApplication->runController('project/0')
+#3 /home/zhao/installer/yii-1.1.11.58da45/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#4 /home/zhao/public_html/yii/trackstar/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/~zhao/yii/trackstar/index.php/project/0/2
+HTTP_REFERER=http://192.168.183.131/~zhao/yii/trackstar/index.php/issue/admin?pid=1
+---
+2012/08/13 15:46:46 [error] [php] Trying to get property of non-object (/home/zhao/public_html/yii/trackstar/protected/views/issue/index.php:10)
+Stack trace:
+#0 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(870): IssueController->renderFile()
+#1 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(783): IssueController->renderPartial()
+#2 /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php(182): IssueController->render()
+#3 /home/zhao/installer/yii-1.1.11.58da45/framework/web/actions/CInlineAction.php(50): IssueController->actionIndex()
+#4 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(134): IssueController->runAction()
+#6 /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php(46): CFilterChain->run()
+#7 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): IssueController->filterProjectContext()
+#8 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#9 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#10 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#11 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): IssueController->filterAccessControl()
+#12 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#13 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(292): CFilterChain->run()
+#14 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(266): IssueController->runActionWithFilters()
+#15 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(283): IssueController->run()
+#16 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#17 /home/zhao/installer/yii-1.1.11.58da45/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /home/zhao/public_html/yii/trackstar/index.php(13): CWebApplication->run()
+REQUEST_URI=/~zhao/yii/trackstar/index.php/issue/index?pid=1
+in /home/zhao/public_html/yii/trackstar/protected/views/issue/index.php (10)
+in /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php (182)
+in /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php (46)
+2012/08/13 15:48:54 [error] [php] Trying to get property of non-object (/home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php:172)
+Stack trace:
+#0 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(134): IssueController->runAction()
+#1 /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php(46): CFilterChain->run()
+#2 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): IssueController->filterProjectContext()
+#3 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#4 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#5 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#6 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): IssueController->filterAccessControl()
+#7 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#8 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(292): CFilterChain->run()
+#9 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(266): IssueController->runActionWithFilters()
+#10 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(283): IssueController->run()
+#11 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#12 /home/zhao/installer/yii-1.1.11.58da45/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#13 /home/zhao/public_html/yii/trackstar/index.php(13): CWebApplication->run()
+REQUEST_URI=/~zhao/yii/trackstar/index.php/issue/index?pid=1
+in /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php (172)
+in /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php (46)
+in /home/zhao/public_html/yii/trackstar/index.php (13)
+2012/08/13 15:52:25 [error] [php] Object of class Project could not be converted to string (/home/zhao/public_html/yii/trackstar/protected/views/issue/admin.php:7)
+Stack trace:
+#0 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(870): IssueController->renderFile()
+#1 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(783): IssueController->renderPartial()
+#2 /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php(199): IssueController->render()
+#3 /home/zhao/installer/yii-1.1.11.58da45/framework/web/actions/CInlineAction.php(50): IssueController->actionAdmin()
+#4 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(309): CInlineAction->runWithParams()
+#5 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(134): IssueController->runAction()
+#6 /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php(46): CFilterChain->run()
+#7 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): IssueController->filterProjectContext()
+#8 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#9 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#10 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#11 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): IssueController->filterAccessControl()
+#12 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#13 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(292): CFilterChain->run()
+#14 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(266): IssueController->runActionWithFilters()
+#15 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(283): IssueController->run()
+#16 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#17 /home/zhao/installer/yii-1.1.11.58da45/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#18 /home/zhao/public_html/yii/trackstar/index.php(13): CWebApplication->run()
+REQUEST_URI=/~zhao/yii/trackstar/index.php/issue/admin?pid=1
+in /home/zhao/public_html/yii/trackstar/protected/views/issue/admin.php (7)
+in /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php (199)
+in /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php (46)
+2012/08/13 15:53:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested project does not
+              exist.' in /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php:22
+Stack trace:
+#0 /home/zhao/public_html/yii/trackstar/protected/controllers/IssueController.php(44): IssueController->loadProject(NULL)
+#1 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): IssueController->filterProjectContext(Object(CFilterChain))
+#2 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#3 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#4 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#5 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#6 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#7 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(292): CFilterChain->run()
+#8 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(283): CController->run('index')
+#10 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(142): CWebApplication->runController('issue/index')
+#11 /home/zhao/installer/yii-1.1.11.58da45/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#12 /home/zhao/public_html/yii/trackstar/index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/~zhao/yii/trackstar/index.php/issue/index
+HTTP_REFERER=http://192.168.183.131/~zhao/yii/trackstar/index.php/issue/admin?pid=1
+---
+2012/08/13 17:14:59 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /home/zhao/installer/yii-1.1.11.58da45/framework/web/auth/CAccessControlFilter.php:170
+Stack trace:
+#0 /home/zhao/installer/yii-1.1.11.58da45/framework/web/auth/CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(292): CFilterChain->run()
+#6 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(283): CController->run('admin')
+#8 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(142): CWebApplication->runController('user/admin')
+#9 /home/zhao/installer/yii-1.1.11.58da45/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/zhao/public_html/yii/trackstar/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/~zhao/yii/trackstar/index.php/user/admin
+HTTP_REFERER=http://192.168.183.131/~zhao/yii/trackstar/index.php/site/login
+---
+2012/08/13 17:15:12 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /home/zhao/installer/yii-1.1.11.58da45/framework/web/auth/CAccessControlFilter.php:170
+Stack trace:
+#0 /home/zhao/installer/yii-1.1.11.58da45/framework/web/auth/CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(292): CFilterChain->run()
+#6 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(283): CController->run('admin')
+#8 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(142): CWebApplication->runController('project/admin')
+#9 /home/zhao/installer/yii-1.1.11.58da45/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#10 /home/zhao/public_html/yii/trackstar/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/~zhao/yii/trackstar/index.php/project/admin
+HTTP_REFERER=http://192.168.183.131/~zhao/yii/trackstar/project
+---
