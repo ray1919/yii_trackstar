@@ -34,6 +34,10 @@ return array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
 		),
+    'authManager'=>array( 
+      'class'=>'CDbAuthManager',
+      'connectionID'=>'db',
+    ),
 		// uncomment the following to enable URLs in path-format
 		'urlManager'=>array(
 			'urlFormat'=>'path',

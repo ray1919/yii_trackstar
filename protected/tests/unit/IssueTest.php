@@ -1,5 +1,5 @@
 <?php
-  class ProjectTest extends CDbTestCase {
+  class IssueTest extends CDbTestCase {
     public $fixtures=array(
           'projects'=>'Project',
           'issues'=>'Issue',

@@ -74,3 +74,55 @@ VALUES
 INSERT INTO tbl_project_user_assignment (project_id, user_id)
 VALUES (1,1), (1,2);
 
+create table tbl_project_user_role 
+(
+    project_id INTEGER NOT NULL, 
+    user_id INTEGER NOT NULL, 
+    role VARCHAR(64) NOT NULL, 
+    primary key (project_id,user_id,role), 
+    foreign key (project_id) references tbl_project (id), 
+    foreign key (user_id) references tbl_user (id), 
+    foreign key (role) references AuthItem (name)
+);
+/**
+ * Database schema required by CDbAuthManager.
+ *
+ * @author Qiang Xue <qiang.xue@gmail.com>
+ * @link http://www.yiiframework.com/
+ * @copyright Copyright &copy; 2008 Yii Software LLC
+ * @license http://www.yiiframework.com/license/
+ * @since 1.0
+ */
+
+drop table if exists `AuthAssignment`;
+drop table if exists `AuthItemChild`;
+drop table if exists `AuthItem`;
+
+create table `AuthItem`
+(
+   `name`                 varchar(64) not null,
+   `type`                 integer not null,
+   `description`          text,
+   `bizrule`              text,
+   `data`                 text,
+   primary key (`name`)
+) engine InnoDB;
+
+create table `AuthItemChild`
+(
+   `parent`               varchar(64) not null,
+   `child`                varchar(64) not null,
+   primary key (`parent`,`child`),
+   foreign key (`parent`) references `AuthItem` (`name`) on delete cascade on update cascade,
+   foreign key (`child`) references `AuthItem` (`name`) on delete cascade on update cascade
+) engine InnoDB;
+
+create table `AuthAssignment`
+(
+   `itemname`             varchar(64) not null,
+   `userid`               varchar(64) not null,
+   `bizrule`              text,
+   `data`                 text,
+   primary key (`itemname`,`userid`),
+   foreign key (`itemname`) references `AuthItem` (`name`) on delete cascade on update cascade
+) engine InnoDB;

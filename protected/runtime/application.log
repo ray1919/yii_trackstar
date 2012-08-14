@@ -1631,3 +1631,260 @@ Stack trace:
 REQUEST_URI=/~zhao/yii/trackstar/index.php/project/admin
 HTTP_REFERER=http://192.168.183.131/~zhao/yii/trackstar/project
 ---
+2012/08/14 23:27:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "view/view".' in /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php:287
+Stack trace:
+#0 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(142): CWebApplication->runController('view/view')
+#1 /home/zhao/installer/yii-1.1.11.58da45/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#2 /home/zhao/public_html/yii/trackstar/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/~zhao/yii/trackstar/view/1
+---
+2012/08/14 23:36:12 [error] [php] Undefined offset: 0 (/home/zhao/installer/yii-1.1.11.58da45/framework/zii/widgets/CMenu.php:303)
+Stack trace:
+#0 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CBaseController.php(148): CMenu->init()
+#1 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CBaseController.php(173): ProjectController->createWidget()
+#2 /home/zhao/public_html/yii/trackstar/protected/views/layouts/column2.php(17): ProjectController->widget()
+#3 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CBaseController.php(127): require()
+#4 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CBaseController.php(96): ProjectController->renderInternal()
+#5 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(785): ProjectController->renderFile()
+#6 /home/zhao/public_html/yii/trackstar/protected/controllers/ProjectController.php(71): ProjectController->render()
+#7 unknown(0): ProjectController->actionView()
+#8 /home/zhao/installer/yii-1.1.11.58da45/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#9 /home/zhao/installer/yii-1.1.11.58da45/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#10 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(309): CInlineAction->runWithParams()
+#11 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(134): ProjectController->runAction()
+#12 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#13 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#14 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): ProjectController->filterAccessControl()
+#15 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#16 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(292): CFilterChain->run()
+#17 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(266): ProjectController->runActionWithFilters()
+#18 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(283): ProjectController->run()
+#19 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#20 /home/zhao/installer/yii-1.1.11.58da45/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#21 /home/zhao/public_html/yii/trackstar/index.php(13): CWebApplication->run()
+REQUEST_URI=/~zhao/yii/trackstar/index.php/project/4
+in /home/zhao/public_html/yii/trackstar/protected/views/layouts/column2.php (17)
+in /home/zhao/public_html/yii/trackstar/protected/controllers/ProjectController.php (71)
+in /home/zhao/public_html/yii/trackstar/index.php (13)
+2012/08/14 23:37:27 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php:337
+Stack trace:
+#0 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(310): CController->invalidActionParams(Object(CInlineAction))
+#1 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#2 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#3 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#4 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#5 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#6 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(292): CFilterChain->run()
+#7 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(283): CController->run('view')
+#9 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(142): CWebApplication->runController('project/view')
+#10 /home/zhao/installer/yii-1.1.11.58da45/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /home/zhao/public_html/yii/trackstar/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/~zhao/yii/trackstar/index.php/project/view
+HTTP_REFERER=http://z/~zhao/yii/trackstar/index.php/project/4
+---
+2012/08/14 23:46:22 [error] [php] include(ii.php): failed to open stream: No such file or directory (/home/zhao/installer/yii-1.1.11.58da45/framework/YiiBase.php:423)
+Stack trace:
+#0 /home/zhao/public_html/yii/trackstar/protected/views/project/view.php(26): spl_autoload_call()
+#1 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CBaseController.php(127): require()
+#2 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CBaseController.php(96): ProjectController->renderInternal()
+#3 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(870): ProjectController->renderFile()
+#4 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(783): ProjectController->renderPartial()
+#5 /home/zhao/public_html/yii/trackstar/protected/controllers/ProjectController.php(71): ProjectController->render()
+#6 unknown(0): ProjectController->actionView()
+#7 /home/zhao/installer/yii-1.1.11.58da45/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#8 /home/zhao/installer/yii-1.1.11.58da45/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#9 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(309): CInlineAction->runWithParams()
+#10 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(134): ProjectController->runAction()
+#11 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#12 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#13 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): ProjectController->filterAccessControl()
+#14 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#15 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(292): CFilterChain->run()
+#16 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(266): ProjectController->runActionWithFilters()
+#17 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(283): ProjectController->run()
+#18 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#19 /home/zhao/installer/yii-1.1.11.58da45/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#20 /home/zhao/public_html/yii/trackstar/index.php(13): CWebApplication->run()
+REQUEST_URI=/~zhao/yii/trackstar/index.php/project/4
+in /home/zhao/public_html/yii/trackstar/protected/views/project/view.php (26)
+in /home/zhao/public_html/yii/trackstar/protected/controllers/ProjectController.php (71)
+in /home/zhao/public_html/yii/trackstar/index.php (13)
+2012/08/14 23:56:02 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens. The SQL statement executed was: SELECT role FROM tbl_project_user_role WHERE
+      project_id=:projectId AND user_id=:userId AND role=':role'.
+in /home/zhao/public_html/yii/trackstar/protected/models/Project.php (155)
+in /home/zhao/public_html/yii/trackstar/protected/views/project/view.php (26)
+in /home/zhao/public_html/yii/trackstar/protected/controllers/ProjectController.php (71)
+2012/08/14 23:56:02 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens. The SQL statement executed was: SELECT role FROM tbl_project_user_role WHERE
+      project_id=:projectId AND user_id=:userId AND role=':role'' in /home/zhao/installer/yii-1.1.11.58da45/framework/db/CDbCommand.php:354
+Stack trace:
+#0 /home/zhao/public_html/yii/trackstar/protected/models/Project.php(155): CDbCommand->execute()
+#1 /home/zhao/public_html/yii/trackstar/protected/views/project/view.php(26): Project->isUserInRole('owner')
+#2 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CBaseController.php(127): require('/home/zhao/publ...')
+#3 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/zhao/publ...', Array, true)
+#4 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(870): CBaseController->renderFile('/home/zhao/publ...', Array, true)
+#5 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(783): CController->renderPartial('view', Array, true)
+#6 /home/zhao/public_html/yii/trackstar/protected/controllers/ProjectController.php(71): CController->render('view', Array)
+#7 [internal function]: ProjectController->actionView('4')
+#8 /home/zhao/installer/yii-1.1.11.58da45/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(ProjectController), Array)
+#9 /home/zhao/installer/yii-1.1.11.58da45/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(ProjectController), Object(ReflectionMethod), Array)
+#10 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#13 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(292): CFilterChain->run()
+#17 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(283): CController->run('view')
+#19 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(142): CWebApplication->runController('project/view')
+#20 /home/zhao/installer/yii-1.1.11.58da45/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#21 /home/zhao/public_html/yii/trackstar/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/~zhao/yii/trackstar/index.php/project/4
+HTTP_REFERER=http://z/~zhao/yii/trackstar/index.php/project/index
+---
+2012/08/14 23:56:02 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens. The SQL statement executed was: SELECT role FROM tbl_project_user_role WHERE
+      project_id=:projectId AND user_id=:userId AND role=':role'.
+in /home/zhao/public_html/yii/trackstar/protected/models/Project.php (155)
+in /home/zhao/public_html/yii/trackstar/protected/views/project/view.php (26)
+in /home/zhao/public_html/yii/trackstar/protected/controllers/ProjectController.php (71)
+2012/08/14 23:56:02 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens. The SQL statement executed was: SELECT role FROM tbl_project_user_role WHERE
+      project_id=:projectId AND user_id=:userId AND role=':role'' in /home/zhao/installer/yii-1.1.11.58da45/framework/db/CDbCommand.php:354
+Stack trace:
+#0 /home/zhao/public_html/yii/trackstar/protected/models/Project.php(155): CDbCommand->execute()
+#1 /home/zhao/public_html/yii/trackstar/protected/views/project/view.php(26): Project->isUserInRole('owner')
+#2 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CBaseController.php(127): require('/home/zhao/publ...')
+#3 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/zhao/publ...', Array, true)
+#4 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(870): CBaseController->renderFile('/home/zhao/publ...', Array, true)
+#5 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(783): CController->renderPartial('view', Array, true)
+#6 /home/zhao/public_html/yii/trackstar/protected/controllers/ProjectController.php(71): CController->render('view', Array)
+#7 [internal function]: ProjectController->actionView('4')
+#8 /home/zhao/installer/yii-1.1.11.58da45/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(ProjectController), Array)
+#9 /home/zhao/installer/yii-1.1.11.58da45/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(ProjectController), Object(ReflectionMethod), Array)
+#10 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#11 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#13 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#14 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#15 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(292): CFilterChain->run()
+#17 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(283): CController->run('view')
+#19 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(142): CWebApplication->runController('project/view')
+#20 /home/zhao/installer/yii-1.1.11.58da45/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#21 /home/zhao/public_html/yii/trackstar/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/~zhao/yii/trackstar/index.php/project/4
+HTTP_REFERER=http://z/~zhao/yii/trackstar/index.php/project/index
+---
+2012/08/15 00:11:52 [error] [php] Undefined variable: auth (/home/zhao/public_html/yii/trackstar/protected/views/project/view.php:21)
+Stack trace:
+#0 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(870): ProjectController->renderFile()
+#1 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(783): ProjectController->renderPartial()
+#2 /home/zhao/public_html/yii/trackstar/protected/controllers/ProjectController.php(71): ProjectController->render()
+#3 unknown(0): ProjectController->actionView()
+#4 /home/zhao/installer/yii-1.1.11.58da45/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs()
+#5 /home/zhao/installer/yii-1.1.11.58da45/framework/web/actions/CInlineAction.php(48): CInlineAction->runWithParamsInternal()
+#6 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(309): CInlineAction->runWithParams()
+#7 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(134): ProjectController->runAction()
+#8 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#9 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#10 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): ProjectController->filterAccessControl()
+#11 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#12 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(292): CFilterChain->run()
+#13 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(266): ProjectController->runActionWithFilters()
+#14 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(283): ProjectController->run()
+#15 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#16 /home/zhao/installer/yii-1.1.11.58da45/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#17 /home/zhao/public_html/yii/trackstar/index.php(13): CWebApplication->run()
+REQUEST_URI=/~zhao/yii/trackstar/index.php/project/4
+in /home/zhao/public_html/yii/trackstar/protected/views/project/view.php (21)
+in /home/zhao/public_html/yii/trackstar/protected/controllers/ProjectController.php (71)
+in /home/zhao/public_html/yii/trackstar/index.php (13)
+2012/08/15 00:12:29 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'owner-1' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `AuthAssignment` (`itemname`, `userid`, `bizrule`, `data`) VALUES (:itemname, :userid, :bizrule, :data).
+in /home/zhao/public_html/yii/trackstar/protected/views/project/view.php (22)
+in /home/zhao/public_html/yii/trackstar/protected/controllers/ProjectController.php (71)
+in /home/zhao/public_html/yii/trackstar/index.php (13)
+2012/08/15 00:12:29 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'owner-1' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `AuthAssignment` (`itemname`, `userid`, `bizrule`, `data`) VALUES (:itemname, :userid, :bizrule, :data)' in /home/zhao/installer/yii-1.1.11.58da45/framework/db/CDbCommand.php:354
+Stack trace:
+#0 /home/zhao/installer/yii-1.1.11.58da45/framework/db/CDbCommand.php(1178): CDbCommand->execute(Array)
+#1 /home/zhao/installer/yii-1.1.11.58da45/framework/web/auth/CDbAuthManager.php(264): CDbCommand->insert('AuthAssignment', Array)
+#2 /home/zhao/public_html/yii/trackstar/protected/views/project/view.php(22): CDbAuthManager->assign('owner', '1', 'return isset($p...')
+#3 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CBaseController.php(127): require('/home/zhao/publ...')
+#4 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/zhao/publ...', Array, true)
+#5 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(870): CBaseController->renderFile('/home/zhao/publ...', Array, true)
+#6 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(783): CController->renderPartial('view', Array, true)
+#7 /home/zhao/public_html/yii/trackstar/protected/controllers/ProjectController.php(71): CController->render('view', Array)
+#8 [internal function]: ProjectController->actionView('4')
+#9 /home/zhao/installer/yii-1.1.11.58da45/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(ProjectController), Array)
+#10 /home/zhao/installer/yii-1.1.11.58da45/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(ProjectController), Object(ReflectionMethod), Array)
+#11 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#12 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#13 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#14 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#15 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#16 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#17 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(292): CFilterChain->run()
+#18 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(283): CController->run('view')
+#20 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(142): CWebApplication->runController('project/view')
+#21 /home/zhao/installer/yii-1.1.11.58da45/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#22 /home/zhao/public_html/yii/trackstar/index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/~zhao/yii/trackstar/index.php/project/4
+HTTP_REFERER=http://z/~zhao/yii/trackstar/index.php/project/index
+---
+2012/08/15 00:13:15 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'owner-1' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `AuthAssignment` (`itemname`, `userid`, `bizrule`, `data`) VALUES (:itemname, :userid, :bizrule, :data).
+in /home/zhao/public_html/yii/trackstar/protected/views/project/view.php (22)
+in /home/zhao/public_html/yii/trackstar/protected/controllers/ProjectController.php (71)
+in /home/zhao/public_html/yii/trackstar/index.php (13)
+2012/08/15 00:13:15 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'owner-1' for key 'PRIMARY'. The SQL statement executed was: INSERT INTO `AuthAssignment` (`itemname`, `userid`, `bizrule`, `data`) VALUES (:itemname, :userid, :bizrule, :data)' in /home/zhao/installer/yii-1.1.11.58da45/framework/db/CDbCommand.php:354
+Stack trace:
+#0 /home/zhao/installer/yii-1.1.11.58da45/framework/db/CDbCommand.php(1178): CDbCommand->execute(Array)
+#1 /home/zhao/installer/yii-1.1.11.58da45/framework/web/auth/CDbAuthManager.php(264): CDbCommand->insert('AuthAssignment', Array)
+#2 /home/zhao/public_html/yii/trackstar/protected/views/project/view.php(22): CDbAuthManager->assign('owner', '1', 'return isset($p...')
+#3 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CBaseController.php(127): require('/home/zhao/publ...')
+#4 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CBaseController.php(96): CBaseController->renderInternal('/home/zhao/publ...', Array, true)
+#5 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(870): CBaseController->renderFile('/home/zhao/publ...', Array, true)
+#6 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(783): CController->renderPartial('view', Array, true)
+#7 /home/zhao/public_html/yii/trackstar/protected/controllers/ProjectController.php(71): CController->render('view', Array)
+#8 [internal function]: ProjectController->actionView('4')
+#9 /home/zhao/installer/yii-1.1.11.58da45/framework/web/actions/CAction.php(107): ReflectionMethod->invokeArgs(Object(ProjectController), Array)
+#10 /home/zhao/installer/yii-1.1.11.58da45/framework/web/actions/CInlineAction.php(48): CAction->runWithParamsInternal(Object(ProjectController), Object(ReflectionMethod), Array)
+#11 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(309): CInlineAction->runWithParams(Array)
+#12 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#13 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#14 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(1146): CFilter->filter(Object(CFilterChain))
+#15 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#16 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#17 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(292): CFilterChain->run()
+#18 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#19 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(283): CController->run('view')
+#20 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(142): CWebApplication->runController('project/view')
+#21 /home/zhao/installer/yii-1.1.11.58da45/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#22 /home/zhao/public_html/yii/trackstar/index.php(13): CApplication->run()
+#23 {main}
+REQUEST_URI=/~zhao/yii/trackstar/index.php/project/4
+HTTP_REFERER=http://z/~zhao/yii/trackstar/index.php/project/index
+---
+2012/08/15 00:15:01 [error] [php] Missing argument 1 for ProjectController::loadModel(), called in /home/zhao/public_html/yii/trackstar/protected/controllers/ProjectController.php on line 190 and defined (/home/zhao/public_html/yii/trackstar/protected/controllers/ProjectController.php:166)
+Stack trace:
+#0 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(309): CInlineAction->runWithParams()
+#1 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(134): ProjectController->runAction()
+#2 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilter.php(41): CFilterChain->run()
+#3 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(1146): CAccessControlFilter->filter()
+#4 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CInlineFilter.php(59): ProjectController->filterAccessControl()
+#5 /home/zhao/installer/yii-1.1.11.58da45/framework/web/filters/CFilterChain.php(131): CInlineFilter->filter()
+#6 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(292): CFilterChain->run()
+#7 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CController.php(266): ProjectController->runActionWithFilters()
+#8 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(283): ProjectController->run()
+#9 /home/zhao/installer/yii-1.1.11.58da45/framework/web/CWebApplication.php(142): CWebApplication->runController()
+#10 /home/zhao/installer/yii-1.1.11.58da45/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#11 /home/zhao/public_html/yii/trackstar/index.php(13): CWebApplication->run()
+REQUEST_URI=/~zhao/yii/trackstar/index.php/project/adduser/4
+in /home/zhao/public_html/yii/trackstar/protected/controllers/ProjectController.php (166)
+in /home/zhao/public_html/yii/trackstar/protected/controllers/ProjectController.php (190)
+in /home/zhao/public_html/yii/trackstar/index.php (13)
