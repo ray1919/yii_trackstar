@@ -1,3 +1,9 @@
+grant all privileges on trackstar_dev.* to yii_trackstar@localhost identified by 'yii_trackstar';
+grant all privileges on trackstar_test.* to yii_trackstar@localhost identified by 'yii_trackstar';
+
+create table trackstar_test;
+use trackstar_test;
+
 CREATE TABLE if not exists tbl_project
 (
 	id INTEGER NOT NULL PRIMARY KEY AUTO_INCREMENT,
@@ -71,19 +77,11 @@ VALUES
 ('test1@notanaddress.com','Test_User_One', MD5('test1')),
 ('test2@notanaddress.com','Test_User_Two', MD5('test2'))
 ;
+insert into tbl_project (name, description) values ("Test Project 1", "Description for Test Project 1");
+insert into tbl_project (name, description) values ("Test Project 2", "Description for Test Project 2");
 INSERT INTO tbl_project_user_assignment (project_id, user_id)
 VALUES (1,1), (1,2);
 
-create table tbl_project_user_role 
-(
-    project_id INTEGER NOT NULL, 
-    user_id INTEGER NOT NULL, 
-    role VARCHAR(64) NOT NULL, 
-    primary key (project_id,user_id,role), 
-    foreign key (project_id) references tbl_project (id), 
-    foreign key (user_id) references tbl_user (id), 
-    foreign key (role) references AuthItem (name)
-);
 /**
  * Database schema required by CDbAuthManager.
  *
@@ -126,3 +124,14 @@ create table `AuthAssignment`
    primary key (`itemname`,`userid`),
    foreign key (`itemname`) references `AuthItem` (`name`) on delete cascade on update cascade
 ) engine InnoDB;
+
+create table tbl_project_user_role 
+(
+    project_id INTEGER NOT NULL, 
+    user_id INTEGER NOT NULL, 
+    role VARCHAR(64) NOT NULL, 
+    primary key (project_id,user_id,role), 
+    foreign key (project_id) references tbl_project (id), 
+    foreign key (user_id) references tbl_user (id), 
+    foreign key (role) references AuthItem (name)
+);

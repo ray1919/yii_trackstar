@@ -1888,3 +1888,48 @@ REQUEST_URI=/~zhao/yii/trackstar/index.php/project/adduser/4
 in /home/zhao/public_html/yii/trackstar/protected/controllers/ProjectController.php (166)
 in /home/zhao/public_html/yii/trackstar/protected/controllers/ProjectController.php (190)
 in /home/zhao/public_html/yii/trackstar/index.php (13)
+2012/08/20 13:57:57 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[28000] [1045] Access denied for user 'yii_trackstar'@'localhost' (using password: YES)' in Z:\web\yii\framework\db\CDbConnection.php:382
+Stack trace:
+#0 Z:\web\yii\framework\db\CDbConnection.php(331): CDbConnection->open()
+#1 Z:\web\yii\framework\db\CDbConnection.php(309): CDbConnection->setActive(true)
+#2 Z:\web\yii\framework\base\CModule.php(388): CDbConnection->init()
+#3 Z:\web\yii\framework\base\CApplication.php(431): CModule->getComponent('db')
+#4 Z:\web\yii\framework\db\ar\CActiveRecord.php(624): CApplication->getDb()
+#5 Z:\web\yii\framework\db\ar\CActiveRecord.php(2311): CActiveRecord->getDbConnection()
+#6 Z:\web\yii\framework\db\ar\CActiveRecord.php(388): CActiveRecordMetaData->__construct(Object(User))
+#7 Z:\web\yii_trackstar\protected\models\User.php(32): CActiveRecord::model('User')
+#8 Z:\web\yii_trackstar\protected\components\UserIdentity.php(16): User::model()
+#9 Z:\web\yii_trackstar\protected\models\LoginForm.php(52): UserIdentity->authenticate()
+#10 Z:\web\yii\framework\validators\CInlineValidator.php(43): LoginForm->authenticate('password', Array)
+#11 Z:\web\yii\framework\validators\CValidator.php(214): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#12 Z:\web\yii\framework\base\CModel.php(158): CValidator->validate(Object(LoginForm), NULL)
+#13 Z:\web\yii_trackstar\protected\controllers\SiteController.php(94): CModel->validate()
+#14 Z:\web\yii\framework\web\actions\CInlineAction.php(50): SiteController->actionLogin()
+#15 Z:\web\yii\framework\web\CController.php(309): CInlineAction->runWithParams(Array)
+#16 Z:\web\yii\framework\web\CController.php(287): CController->runAction(Object(CInlineAction))
+#17 Z:\web\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 Z:\web\yii\framework\web\CWebApplication.php(283): CController->run('login')
+#19 Z:\web\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('site/login')
+#20 Z:\web\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#21 Z:\web\yii_trackstar\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/yii_trackstar/index.php/site/login
+HTTP_REFERER=http://localhost/yii_trackstar/index.php/site/login
+---
+2012/08/20 14:19:29 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in Z:\web\yii\framework\web\auth\CAccessControlFilter.php:170
+Stack trace:
+#0 Z:\web\yii\framework\web\auth\CAccessControlFilter.php(133): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 Z:\web\yii\framework\web\filters\CFilter.php(39): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 Z:\web\yii\framework\web\CController.php(1146): CFilter->filter(Object(CFilterChain))
+#3 Z:\web\yii\framework\web\filters\CInlineFilter.php(59): CController->filterAccessControl(Object(CFilterChain))
+#4 Z:\web\yii\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#5 Z:\web\yii\framework\web\CController.php(292): CFilterChain->run()
+#6 Z:\web\yii\framework\web\CController.php(266): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 Z:\web\yii\framework\web\CWebApplication.php(283): CController->run('admin')
+#8 Z:\web\yii\framework\web\CWebApplication.php(142): CWebApplication->runController('issue/admin')
+#9 Z:\web\yii\framework\base\CApplication.php(162): CWebApplication->processRequest()
+#10 Z:\web\yii_trackstar\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/yii_trackstar/index.php/issue/admin?pid=1
+HTTP_REFERER=http://localhost/yii_trackstar/index.php/issue/2
+---
