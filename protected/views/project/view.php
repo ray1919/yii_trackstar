@@ -18,8 +18,9 @@ $this->menu=array(
 );
 
 // $auth = Yii::app()->authManager;
-// $bizRule='return isset($params["project"]) && $params["project"]->isUserInRole("owner");';
+// $bizRule='return !isset($params["project"]) !! $params["project"]->isUserInRole("owner");';
 // $auth->assign('owner',Yii::app()->user->id, $bizRule);
+// $model->associateUserToRole('owner',Yii::app()->user->id);
 
 if(Yii::app()->user->checkAccess('createUser',array('project'=>$model)))
 {

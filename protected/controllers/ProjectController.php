@@ -51,14 +51,19 @@ class ProjectController extends Controller
 	 */
 	public function actionView($id)
 	{
-		//$this->render('view',array(
-		//	'model'=>$this->loadModel($id),
-    //));
+    $project = $this->loadModel($id);
+    if(!Yii::app()->user->checkAccess('readProject',
+            array('project'=>$project)))
+    {
+      throw new CHttpException(403,
+            'You are not authorized to perform this action.');
+    }
 
     $issueDataProvider=new CActiveDataProvider('Issue', array(
       'criteria'=>array(
         'condition'=>'project_id=:projectId',
-        'params'=>array(':projectId'=>$this->loadModel($id)->id),
+//      'params'=>array(':projectId'=>$this->loadModel($id)->id),
+        'params'=>array(':projectId'=>$project->id),
       ),
       'pagination'=>array(
         'pageSize'=>1,
@@ -77,6 +82,11 @@ class ProjectController extends Controller
 	 */
 	public function actionCreate()
 	{
+    if(!Yii::app()->user->checkAccess('createProject'))
+    {
+      throw new CHttpException(403,
+            'You are not authorized to perform this action.');
+    }
 		$model=new Project;
 
 		// Uncomment the following line if AJAX validation is needed
@@ -86,7 +96,11 @@ class ProjectController extends Controller
 		{
 			$model->attributes=$_POST['Project'];
 			if($model->save())
+      {
+        $model->associateUserToRole('owner',Yii::app()->user->id);
+        $model->associateUserToProject(Yii::app()->user);
 				$this->redirect(array('view','id'=>$model->id));
+      }
 		}
 
 		$this->render('create',array(
@@ -186,8 +200,14 @@ class ProjectController extends Controller
 
   public function actionAdduser($id)
   {
-    $form=new ProjectUserForm;
     $project = $this->loadModel($id);
+    if(!Yii::app()->user->checkAccess('updateProject',
+            array('project'=>$project)))
+    {
+      throw new CHttpException(403,
+            'You are not authorized to perform this action.');
+    }
+    $form=new ProjectUserForm;
     // collect user input data
     if(isset($_POST['ProjectUserForm']))
     {

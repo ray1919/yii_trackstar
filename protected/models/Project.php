@@ -170,10 +170,12 @@ class Project extends TrackStarActiveRecord
   public function associateUserToProject($user)
   {
     $sql = "INSERT INTO tbl_project_user_assignment (project_id,
-      user_id) VALUES (:projectId, :userId)";
+      user_id,create_time,create_user_id) VALUES (:projectId, :userId,
+      now(), :create_user_id)";
     $command = Yii::app()->db->createCommand($sql);
     $command->bindValue(":projectId", $this->id, PDO::PARAM_INT);
     $command->bindValue(":userId", $user->id, PDO::PARAM_INT);
+    $command->bindValue(":create_user_id", Yii::app()->user->id, PDO::PARAM_INT);
     return $command->execute();
   }
   /*
