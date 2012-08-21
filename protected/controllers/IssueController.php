@@ -81,7 +81,7 @@ class IssueController extends Controller
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
 				'actions'=>array('admin','delete'),
-				'users'=>array('admin'),
+				'users'=>array('@'),
 			),
 			array('deny',  // deny all users
 				'users'=>array('*'),
@@ -95,6 +95,12 @@ class IssueController extends Controller
 	 */
 	public function actionView($id)
 	{
+    if(!Yii::app()->user->checkAccess('readIssue'))
+    {
+      throw new CHttpException(403,
+            'You are not authorized to perform this action.');
+    }
+
 		$this->render('view',array(
 			'model'=>$this->loadModel($id),
 		));
@@ -106,6 +112,13 @@ class IssueController extends Controller
 	 */
 	public function actionCreate()
 	{
+    if(!Yii::app()->user->checkAccess('createIssue',
+        array('project'=>$this->_project)))
+    {
+      throw new CHttpException(403,
+            'You are not authorized to perform this action.');
+    }
+
 		$model=new Issue;
     $model->project_id = $this->_project->id;
 
@@ -131,6 +144,12 @@ class IssueController extends Controller
 	 */
 	public function actionUpdate($id)
 	{
+    if(!Yii::app()->user->checkAccess('updateIssue',
+        array('project'=>$this->_project)))
+    {
+      throw new CHttpException(403,
+            'You are not authorized to perform this action.');
+    }
 		$model=$this->loadModel($id);
 
 		// Uncomment the following line if AJAX validation is needed
@@ -155,6 +174,12 @@ class IssueController extends Controller
 	 */
 	public function actionDelete($id)
 	{
+    if(!Yii::app()->user->checkAccess('deleteIssue',
+        array('project'=>$this->_project)))
+    {
+      throw new CHttpException(403,
+            'You are not authorized to perform this action.');
+    }
 		$this->loadModel($id)->delete();
 
 		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
@@ -167,6 +192,12 @@ class IssueController extends Controller
 	 */
 	public function actionIndex()
 	{
+    if(!Yii::app()->user->checkAccess('readIssue',
+        array('project'=>$this->_project)))
+    {
+      throw new CHttpException(403,
+            'You are not authorized to perform this action.');
+    }
 		$model=new Issue;
     $model->project_id = $this->_project->id;
 		// $dataProvider=new CActiveDataProvider('Issue');
@@ -187,6 +218,12 @@ class IssueController extends Controller
 	 */
 	public function actionAdmin()
 	{
+    if(!Yii::app()->user->checkAccess('updateIssue',
+        array('project'=>$this->_project)))
+    {
+      throw new CHttpException(403,
+            'You are not authorized to perform this action.');
+    }
 		$model=new Issue('search');
 		$model->unsetAttributes();  // clear any default values
 		if(isset($_GET['Issue']))

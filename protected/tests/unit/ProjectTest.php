@@ -89,7 +89,7 @@ class ProjectTest extends CDbTestCase {
     Yii::app()->user->setId($row1['user_id']);
     $project=Project::model()->findByPk($row1['project_id']);
     $auth = Yii::app()->authManager;
-    $bizRule='return !isset($params["project"]) !! $params["project"]->isUserInRole("member");';
+    $bizRule='return !isset($params["project"]) || $params["project"]->isUserInRole("member");';
     //$bizRule='return isset($params["project"]) && $params["project"]->isUserInRole("member");';
     $auth->assign('member',$row1['user_id'], $bizRule);
     $params=array('project'=>$project);

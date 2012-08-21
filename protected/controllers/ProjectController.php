@@ -37,7 +37,7 @@ class ProjectController extends Controller
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
 				'actions'=>array('admin','delete'),
-				'users'=>array('admin'),
+				'users'=>array('@'),
 			),
 			array('deny',  // deny all users
 				'users'=>array('*'),
@@ -56,7 +56,7 @@ class ProjectController extends Controller
             array('project'=>$project)))
     {
       throw new CHttpException(403,
-            'You are not authorized to perform this action.');
+            'You are not authorized to perform this action (readProject).');
     }
 
     $issueDataProvider=new CActiveDataProvider('Issue', array(
@@ -116,6 +116,12 @@ class ProjectController extends Controller
 	public function actionUpdate($id)
 	{
 		$model=$this->loadModel($id);
+    if(!Yii::app()->user->checkAccess('updateProject',
+            array('project'=>$model)))
+    {
+      throw new CHttpException(403,
+            'You are not authorized to perform this action.');
+    }
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
@@ -139,6 +145,13 @@ class ProjectController extends Controller
 	 */
 	public function actionDelete($id)
 	{
+    $project = $this->loadModel($id);
+    if(!Yii::app()->user->checkAccess('deleteProject',
+            array('project'=>$project)))
+    {
+      throw new CHttpException(403,
+            'You are not authorized to perform this action.');
+    }
 		$this->loadModel($id)->delete();
 
 		// if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser
@@ -151,6 +164,11 @@ class ProjectController extends Controller
 	 */
 	public function actionIndex()
 	{
+    if(!Yii::app()->user->checkAccess('readProject'))
+    {
+      throw new CHttpException(403,
+            'You are not authorized to perform this action.');
+    }
 		$dataProvider=new CActiveDataProvider('Project');
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
@@ -162,6 +180,11 @@ class ProjectController extends Controller
 	 */
 	public function actionAdmin()
 	{
+    if(!Yii::app()->user->checkAccess('deleteProject'))
+    {
+      throw new CHttpException(403,
+            'You are not authorized to perform this action.');
+    }
 		$model=new Project('search');
 		$model->unsetAttributes();  // clear any default values
 		if(isset($_GET['Project']))

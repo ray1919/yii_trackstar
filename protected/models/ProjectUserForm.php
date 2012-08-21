@@ -53,13 +53,16 @@ class ProjectUserForm extends CFormModel
 	        {
 				$this->addError('username','This user has already been added to the project.'); 
 			}
-		    else  
+		    else
 		    {
-			    $this->project->associateUserToProject($user);  
-                $this->project->associateUserToRole($this->role, $user->id); 
-		        $auth = Yii::app()->authManager; 
-			    $bizRule='return !isset($params["project"]) || $params["project"]->isUserInRole("'.$this->role.'");';
-				$auth->assign($this->role,$user->id, $bizRule);
+          $this->project->associateUserToProject($user);
+          $this->project->associateUserToRole($this->role, $user->id);
+          $auth = Yii::app()->authManager;
+          if(!$auth->checkAccess($this->role, $user->id))
+          {
+            $bizRule='return !isset($params["project"]) || $params["project"]->isUserInRole("'.$this->role.'");';
+            $auth->assign($this->role,$user->id, $bizRule);
+          }
 		    }
 		}
 	}
